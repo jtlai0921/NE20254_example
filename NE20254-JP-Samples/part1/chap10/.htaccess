@@ -1,0 +1,18 @@
+#php_value xdebug.max_nesting_level 5
+#php_value assert.active 1
+#php_value assert.bail 0
+#php_value assert.warning 1
+#php_value assert.quiet_eval 0
+#php_value assert.callback assert_cb
+#php_value xdebug.dump_globals 1
+#php_value xdebug.dump.GET *
+#php_value xdebug.dump.POST uname
+#php_value xdebug.show_local_vars 1
+#php_value xdebug.show_mem_delta 1
+php_value xdebug.auto_trace 1
+php_value xdebug.collect_params 1
+php_value xdebug.collect_return 1
+#php_value xdebug.trace_options 1
+
+
+

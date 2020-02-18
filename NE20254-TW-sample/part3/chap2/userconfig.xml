@@ -1,0 +1,12 @@
+<configuration>
+ <fonts>
+	 <font metrics-file="D:/temp/trans/php5/sample/part3/chap2/dfyuan.xml" 
+		 kerning="yes" embed-file="e:/backup/fonts/dfyuanmedium.ttc">
+   <font-triplet name="PGothic" style="normal" weight="normal"/>
+  </font>
+  <font metrics-file="D:/temp/trans/php5/sample/part3/chap2/mingliu.xml" 
+	  kerning="yes" embed-file="e:/backup/fonts/mingliu-5.03.ttc">
+  <font-triplet name="PMincho" style="normal" weight="normal"/>
+  </font>
+ </fonts>
+</configuration>

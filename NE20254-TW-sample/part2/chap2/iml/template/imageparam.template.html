@@ -1,0 +1,212 @@
+<table>
+ <tbody>
+
+ <tr>
+  <td colspan='2' bgcolor='#ccffff'>
+   <table cellpadding='2' cellspacing='0' border='0' width='100%'>
+    <tbody>
+    <tr>
+     <td valign='top' align='left' bgcolor='#ccffff'>
+      <a href='$listaction'>ImageList</a>
+     </td>
+     <td align='right' bgcolor='#ccffff'>
+      <a href='$uploadaction'>ImageUpload</a>
+     </td>
+    </tr>
+    </tbody>
+   </table>
+  </td>
+ </tr>
+
+ <form method=get action='$action'>
+ <input type='hidden' name='folder' value='$folder' />
+<!--
+ <tr>
+  <td>
+   Test Mode(1:test)
+  </td>
+  <td>
+   <input type='text' name='TEST' value='$TEST' />
+  </td>
+ </tr>
+-->
+ <tr>
+  <td>
+   original image file directory.
+  </td>
+  <td>
+   <input type='text' name='original_directory' value='$original_directory' />
+  </td>
+ </tr>
+ <tr>
+  <td>
+   thumbnailed image file directory.
+  </td>
+  <td>
+   <input type='text' name='thumbnail_directory' value='$thumbnail_directory' />
+  </td>
+ </tr>
+ <tr>
+  <td>
+   resized work image file directory.
+  </td>
+  <td>
+   <input type='text' name='work_directory' value='$work_directory' />
+  </td>
+ </tr>
+ <tr>
+  <td>
+   expected window width on browser in pixels
+  </td>
+  <td>
+   <input type='text' name='browse_width' value='$browse_width' />
+  </td>
+ </th>
+ <tr>
+  <td>
+   expected window height on browser in pixels.
+  </td>
+  <td>
+   <input type='text' name='browse_height' value='$browse_height' />
+  </td>
+ </th>
+ <tr>
+  <td>
+   thumbnail image width in pixels.
+  </td>
+  <td>
+   <input type='text' name='thumbnail_width' value='$thumbnail_width' />
+  </td>
+ </tr>
+ <tr>
+  <td>
+   thumbnail image height in pixels.
+  </td>
+  <td>
+   <input type='text' name='thumbnail_height' value='$thumbnail_height' />
+  </td>
+ </tr>
+ <tr>
+  <td>
+   label string length for thumbnail.
+  </td>
+  <td>
+   <input type='text' name='thumblabel_length' value='$thumblabel_length' />
+  </td>
+ </tr>
+ <tr>
+  <td>
+   work image width in pixels.
+  </td>
+  <td>
+   <input type='text' name='work_width' value='$work_width' />
+  </td>
+ </tr>
+ <tr>
+  <td>
+   work image height in pixels.
+  </td>
+  <td>
+   <input type='text' name='work_height' value='$work_height' />
+  </td>
+ </tr>
+ <tr>
+  <td>
+   image listing type(0: table, 1: browse, 2: simple)
+  </td>
+  <td>
+   <input type='text' name='list_type' value='$list_type' />
+  </td>
+ </tr>
+ <tr>
+  <td>
+   jpeg image quality(%) when create.
+  </td>
+  <td>
+   <input type='text' name='jpeg_quality' value='$jpeg_quality' />
+  </td>
+ </tr>
+ <tr>
+  <td>
+   smoothing image when resize(sampling requires mutch CPU).
+  </td>
+  <td>
+   <input type='text' name='smooth_resize' value='$smooth_resize' />
+  </td>
+ </tr>
+ <tr>
+  <td>
+   zooming or not(-1: no zoom, 0: zoom out only, 1: zoom)
+  </td>
+  <td>
+   <input type='text' name='zoom_in_out' value='$zoom_in_out' />
+  </td>
+ </tr>
+ <tr>
+  <td>
+   fitting or trimming methed when resize(0: fit in, 1: max aspect, 2: trim out)
+  </td>
+  <td>
+   <input type='text' name='resize_aspect' value='$resize_aspect' />
+  </td>
+ </tr>
+ <tr>
+  <td>
+   how edit the remarks(a:append, o:overwrite, r:readonly, n:none)
+  </td>
+  <td>
+   <input type='text' name='edit_rmk_mode' value='$edit_rmk_mode' />
+  </td>
+ </tr>
+ <tr>
+  <td>
+   picture frame band pixcels(-1: no frame, 0: default).
+  </td>
+  <td>
+   <input type='text' name='pict_frame_band' value='$pict_frame_band' />
+  </td>
+ </tr>
+ <tr>
+  <td>
+   label size on picture frame(-1: no label, 0: auto).
+  </td>
+  <td>
+   <input type='text' name='pict_frame_label' value='$pict_frame_label' />
+  </td>
+ </tr>
+ <tr>
+  <td>
+   maximum number of files to be uploaded for image_upload.
+  </td>
+  <td>
+   <input type='text' name='max_uploads' value='$max_uploads' />
+  </td>
+ </tr>
+ <tr>
+  <td>
+  </td>
+  <td colspan='2'>
+   <input type='submit' value='Set'>
+  </td>
+ </tr>
+ </form>
+
+ <tr>
+  <td colspan='2' bgcolor='#ccffff'>
+   <table cellpadding='2' cellspacing='0' border='0' width='100%'>
+    <tbody>
+    <tr>
+     <td valign='top' align='left' bgcolor='#ccffff'>
+      <a href='$listaction'>ImageList</a>
+     </td>
+     <td align='right' bgcolor='#ccffff'>
+      <a href='$uploadaction'>ImageUpload</a>
+     </td>
+    </tr>
+    </tbody>
+   </table>
+  </td>
+ </tr>
+
+ </tbody>
+</table>

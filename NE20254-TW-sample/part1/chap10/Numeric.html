@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <link href="codecoverage.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+   <table style="border: 1px solid black" cellspacing="0" cellpadding="0" width="100%">
+     <tr><td class="ccLineNumber">1</td><td class="ccNotExecutableLine">&lt;?php</td></tr>
+     <tr><td class="ccLineNumber">2</td><td class="ccNotExecutableLine">require_once &quot;PHPUnit2/Framework/TestCase.php&quot;;</td></tr>
+     <tr><td class="ccLineNumber">3</td><td class="ccNotExecutableLine">require_once &quot;Numeric.php&quot;;</td></tr>
+     <tr><td class="ccLineNumber">4</td><td class="ccNotExecutableLine"></td></tr>
+     <tr><td class="ccLineNumber">5</td><td class="ccNotExecutableLine">class NumericTest extends PHPUnit2_Framework_TestCase {</td></tr>
+     <tr><td class="ccLineNumber">6</td><td class="ccNotExecutableLine">  public $obj;</td></tr>
+     <tr><td class="ccLineNumber">7</td><td class="ccNotExecutableLine"></td></tr>
+     <tr><td class="ccLineNumber">8</td><td class="ccNotExecutableLine">  public static function main() {</td></tr>
+     <tr><td class="ccLineNumber">9</td><td class="ccUncoveredLine">    require_once &quot;PHPUnit2/Framework/TestSuite.php&quot;;</td></tr>
+     <tr><td class="ccLineNumber">10</td><td class="ccUncoveredLine">    require_once &quot;PHPUnit2/TextUI/TestRunner.php&quot;;</td></tr>
+     <tr><td class="ccLineNumber">11</td><td class="ccNotExecutableLine"></td></tr>
+     <tr><td class="ccLineNumber">12</td><td class="ccUncoveredLine">    $suite  = new PHPUnit2_Framework_TestSuite(&quot;NumericTest&quot;);</td></tr>
+     <tr><td class="ccLineNumber">13</td><td class="ccUncoveredLine">    $result = PHPUnit2_TextUI_TestRunner::run($suite);</td></tr>
+     <tr><td class="ccLineNumber">14</td><td class="ccUncoveredLine">  }</td></tr>
+     <tr><td class="ccLineNumber">15</td><td class="ccNotExecutableLine"></td></tr>
+     <tr><td class="ccLineNumber">16</td><td class="ccNotExecutableLine">  public function setUp() {</td></tr>
+     <tr><td class="ccLineNumber">17</td><td class="ccCoveredLine">    $this-&gt;obj = new Numeric;</td></tr>
+     <tr><td class="ccLineNumber">18</td><td class="ccCoveredLine">  }</td></tr>
+     <tr><td class="ccLineNumber">19</td><td class="ccNotExecutableLine"></td></tr>
+     <tr><td class="ccLineNumber">20</td><td class="ccCoveredLine">  public function tearDown() {}</td></tr>
+     <tr><td class="ccLineNumber">21</td><td class="ccNotExecutableLine"></td></tr>
+     <tr><td class="ccLineNumber">22</td><td class="ccNotExecutableLine">  public function testAdd() {</td></tr>
+     <tr><td class="ccLineNumber">23</td><td class="ccCoveredLine">    $this-&gt;assertEquals(5, $this-&gt;obj-&gt;add(2,3));</td></tr>
+     <tr><td class="ccLineNumber">24</td><td class="ccCoveredLine">  }</td></tr>
+     <tr><td class="ccLineNumber">25</td><td class="ccNotExecutableLine"></td></tr>
+     <tr><td class="ccLineNumber">26</td><td class="ccNotExecutableLine">  public function testSub() {</td></tr>
+     <tr><td class="ccLineNumber">27</td><td class="ccCoveredLine">    $this-&gt;assertEquals(-1, Numeric::sub(2,3));</td></tr>
+     <tr><td class="ccLineNumber">28</td><td class="ccCoveredLine">  }</td></tr>
+     <tr><td class="ccLineNumber">29</td><td class="ccNotExecutableLine">}</td></tr>
+     <tr><td class="ccLineNumber">30</td><td class="ccNotExecutableLine">?&gt;</td></tr>
+   </table>
+   <table style="border: 1px solid black" cellspacing="0" cellpadding="0" width="100%">
+     <tr><td class="ccLineNumber">1</td><td class="ccNotExecutableLine">&lt;?php</td></tr>
+     <tr><td class="ccLineNumber">2</td><td class="ccNotExecutableLine">class Numeric {</td></tr>
+     <tr><td class="ccLineNumber">3</td><td class="ccUncoveredLine">  public function add($x, $y) {</td></tr>
+     <tr><td class="ccLineNumber">4</td><td class="ccCoveredLine">    return ($x+$y);</td></tr>
+     <tr><td class="ccLineNumber">5</td><td class="ccUncoveredLine">  }</td></tr>
+     <tr><td class="ccLineNumber">6</td><td class="ccUncoveredLine">  public function sub($x, $y) {</td></tr>
+     <tr><td class="ccLineNumber">7</td><td class="ccCoveredLine">    return ($x-$y);</td></tr>
+     <tr><td class="ccLineNumber">8</td><td class="ccUncoveredLine">  }</td></tr>
+     <tr><td class="ccLineNumber">9</td><td class="ccNotExecutableLine">}</td></tr>
+     <tr><td class="ccLineNumber">10</td><td class="ccNotExecutableLine">?&gt;</td></tr>
+   </table>
+  </body>
+</html>

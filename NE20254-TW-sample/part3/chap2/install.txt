@@ -1,0 +1,73 @@
+Apache FOP-0.20.2¡¢¥ÛVine Linux 2.1.5¡¢¥ê¡¢¥Û¡¦¡¢¡¦€€¥±¡¦¥Í¡£¥·¡¦ö¾ô¿ç
+				2002.1.5 Rui Hirokawa <hirokawa@php.gr.jp>
+				
+
+1.JDK¡¢€€¡¢¡¦€€¥±¡¦¥Í¡£¥·¡¦ë
+Linux x86¥Ø¥à¡¢¥ÛJDK 1.3.1_02 Standard Edition SDK ¡¢€€¥Ï¥¤¥·¡¢¥ÛURL¡¢¥©¡¢òÈ€€ô¦¥­¡¢¡«¡¢¥±¡£¡×
+
+ http://java.sun.com/j2se/1.3/
+
+¡¢¥¦¡¢¥¦¡¢¥Ì¡¢¥Þ¡£¡ÖRedhat RPM shell script¡¢€€¥Í¥Ø¥à¡¢¥­¡¢¡«¡¢¥±¡£¡×
+
+$ sh j2sdk-1_3_1_02-linux-i386-rpm.bin
+$ rpm ivh jdk-1.3.1_02.i386.rpm 
+
+2.FOP¡¢€€¡¢¡¦€€¥±¡¦¥Í¡£¥·¡¦ë
+
+http://xml.apache.org/dist/fop/¡¢¥©¡¢ñ§op-0.20.2RC-bin.tar.gz¡¢€€€€ô¦¥­¡£¡Ö¡¦¡¢¡¦€€¥±
+¡¦¥Í¡£¥·¡¦ö¦¥­¡¢¡«¡¢¥±¡£¡×(¥Î¥æ¥Þ¥½CD-ROM¡¢¥Ò¡¢ä¾€€¥½)
+
+$ tar xzvf Fop-0.20.2RC-bin.tar.gz
+
+FOP¡¢¥Û¡¦¡Ö¡£¥·¡¦¥©¡¦¡¢¡¦¥è¡¢€€ava¡¦¥£¡¦¥Ã¡¦¥±¡¦¥Ë¡¦€€¥­¡¦î§€€€€¥ã¥Ø¥à¥¤¥È¥Ì¥¹¡¢¥Ï¡¦¥Ì¡¦¡×¡¦ø§¥Ã¡¦¥Í¡¦ô¦¥Ò¡¦¥¦¡¦¥ä¡£¥·¡¢¥­¡¢¡«¡¢¥±¡£¡×
+
+$ cp Fop-0.20.2/lib/*.jar /usr/java/jdk1.3.1_02/jre/lib/ext/
+
+3.jpfop¡¢€€¡¢¡¦€€¥±¡¦¥Í¡£¥·¡¦ë
+http://www.sourceforge.net/projects/jpfop/ ¡¢ð¦ê jpfop_0_20_2.tar.gz ¡¢ò
+¡¦¥¿¡¦¥ò¡¦€€ú£¥·¡¦¥Î¡¢¥­¡£¡ÖFop-0.20.2¡¼¥Ï¥¤¥·¡¢¥Ì¥Ê¥¯¥¦¥©¡¢¥­¡¢¡«¡¢¥±¡£¡×(¥Î¥æ¥Þ¥½CD-ROM¡¢¥Ò¡¢ä¾€€¥½)
+
+$ cd Fop-0.20.2
+$ tar xzvf ../jpfop_0_20_2.tar.gz
+
+¥Ë€€¥ï¥¯øÄ¥ß¥¢€€þ¦¥©¡¢¥Á¥¹ðÏ€€¥Ò¥Ä¥ß¥¢€€¥±¡¢õÇop¡¦¡Ö¡£¥·¡¦¥©¡¦¡¢¡¦¥è¡¢€€¥¦¡¦¥ä¡£¥·¡¢¥­¡¢¡«¡¢¥±¡£¡×
+
+$ cp build/fop-0.20.2-jp.jar /usr/java/jdk1.3.1_02/jre/lib/ext/fop.jar
+
+4.¥ÊøË€€¥æ¡¦¥¥¡¦€€¥Í¡¢€€¡¢¡¦€€¥±¡¦¥Í¡£¥·¡¦ë
+
+¡¢¥¦¡¢¥¦¡¢¥Ì¡¢¥Þ¡£¡Ö¡¦¥æ¡¦ô£¥·¡¢¥ÛTrueType¡¦¥æ¡¦¥¥¡¦€€¥Í¡¢¥Ì¡¢¡Ö¡¢öÇøË€€¥¨¡¦¥­¡¦¥Æ¡¦¥Ã/¥ÊøË€€¥¿¥È¥©¡¦¥æ¡¦¥¥¡¦€€¥Í
+¡¢€€¥Í¥Ø¥à¡¢¥­¡¢¡«¡¢¥±¡£¡×
+¥ÊøË€€¥æ¡¦¥¥¡¦€€¥Í¡¢¥Þ¡£¡Öhtt://www.on.cs.keio.ac.jp/~yasu/jp_fonts.html¡¢¥©¡¢é
+¥Ë€€ô´¥È¥Ì¥¹¡¢¥Ì¡¢¥±¡£¡×
+¡¢¡«¡¢¥½¡£¡ÖVine Linux¥Ø¥àRPM¡¦¥æ¡¦¡£¡¦¡¢¡¦ö¦¥Û¥ÊøË€€¥æ¡¦¥¥¡¦€€¥Í¡¢ò VineSeed
+(http://vinelinux.org/vineseed.html) ¡¢¥©¡¢òÈ€€ô´¥È¥Ì¥¹¡¢¥Ì¡¢¥±¡£¡×RPM¡¢¥Þ¡¼¥Ï¥¤¥·¡¢¥Û¡¢ð¦¥ò
+¡¢¥Ò¡¦¡¢¡¦€€¥±¡¦¥Í¡£¥·¡¦ö¦¥­¡¢¡«¡¢¥±¡£¡×
+
+$ rpm ivh mktcapdir-0.3-0vl1.noarch.rpm
+$ rpm ivh TrueTypeFonts_jp-3.0-0vl6.noarch.rpm
+
+5.XML¥Ë€€¥ï¥¯ø§¥æ¡¦¥¥¡¦€€¥Í¡¦¥æ¡¦¡£¡¦¡¢¡¦ö¼üÂ¥ç
+
+¡¼¥Ï¥¤¥·¡¢¥Û¥·ô¿î¦¥Ì¥ÊøË€€¥¨¡¦¥­¡¦¥Æ¡¦¥Ã/¥ÊøË€€¥¿¥È¥©¡¦¥æ¡¦¥¥¡¦€€¥Í¥Ø¥àXML¡¦¥æ¡¦¥¥¡¦€€¥Í¡¦¥æ¡¦¡£¡¦¡¢¡¦ö¦€€üÂ¥ç¡¢¥­¡¢¡«¡¢¥±¡£¡×
+¡¢¥Ï¡¢¥§¡£¡Ö¥Î¥æ¥Þ¥½CD-ROM /mnt/cdrom/code/part3/chap2/¡¢¥Ò¡¢äÈ¥¢¡¦¥æ¡¦¡£¡¦¡¢¡¦ö¦€€€€¥½¡¢¥­¡¢¥Ë¡¢¡¢¡¢¡«¡¢¥±¡£¡×
+
+java org.apache.fop.fonts.apps.TTFReader /usr/lib/X11/fonts/TrueType/kochi-gothic.ttf kochi-gothic.xml
+
+java org.apache.fop.fonts.apps.TTFReader /usr/lib/X11/fonts/TrueType/kochi-mincho.ttf kochi-mincho.xml
+
+¥³üÂ¥ç¡¢¥­¡¢¥½xml¡¦¥æ¡¦¡£¡¦¡¢¡¦ö¦¥Þ¥Ê¥ã¥Ê€€¥Ï¥»ø¿ê(¡¢¥¦¡¢¥Û¥Ûæ¦¥Ì¡¢¥Þ/usr/lib/X11/fonts/TrueType/)
+¡¢¥Ò¡¦¥¦¡¦¥ä¡£¥·¡¢¥­¡¢¥Ë¡¢¥§¡¢¥å¡¢¡«¡¢¥±¡£¡×
+
+
+6.¡¦ì£¥·¡¦¥«¡¦¥æ¡¦¥¥¡¦€€¥Í¥Èô·¥Á¡¦¥æ¡¦¡£¡¦¡¢¡¦ö¦¥Û¥³üÂ¥ç
+
+Fop-0.20.2/conf/userconfig.xml¡¢¥Ûfonts¡¦¥µ¡¦¥Ã¡¦¥­¡¦î§€€¥Ò¡¼¥Ï¥¤¥·¡¢¥Û¥Èô·¥Á¡¢€€¥Î¥¤¥Æ¡¢¥­¡£¡Ö
+¥Ê¥ã¥Ê€€¥Ï¥»ø¿ô¦¥Ò¡¦¥¦¡¦¥ä¡£¥·¡¢¥­¡¢¡«¡¢¥±¡£¡×(CD-ROM¡¢¥Ò¥·€€¥½)
+
+<font metrics-file="/usr/lib/X11/fonts/TrueType/kochi-gothic.xml" kerning="yes" embed-file="/usr/lib/X11/fonts/TrueType/kochi-gothic.ttf">
+    <font-triplet name="JaFont" style="normal" weight="normal"/>
+ </font>
+ 
+6.jpfop¥Î¥æ¥Ä¡¼¡¢¥Û¡¦¥ª¡¦€€¥é¡¦ö¦€€¥Ä¥±¥ä¡¢¥­¡¢¥Ë¡¢¡¬¡¢¡«¡¢¥­¡¢î¦¥ò¡£¡×
+

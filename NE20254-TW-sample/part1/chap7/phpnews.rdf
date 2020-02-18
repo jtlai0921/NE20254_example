@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+ xml:lang="ja">
+ <channel rdf:about="http://www.example.com/">
+  <title>PHP 新聞</title>
+  <description>PHP 相關新聞</description>
+  <link>http://www.example.com/</link>
+  <dc:language>zh-tw</dc:language>
+  <dc:date>2004-04-11</dc:date>
+  <syn:updatePeriod>daily</syn:updatePeriod>
+  <items>
+   <rdf:Seq>
+    <rdf:li rdf:resource="http://www.php.net/downloads.php#v5"/>
+    <rdf:li rdf:resource="http://www.php.net/downloads.php"/>
+   </rdf:Seq>
+  </items>
+ </channel>
+ <item rdf:about="http://www.php.net/downloads.php#v5">
+  <title>PHP 5.0.0RC1 公開</title>
+  <link>http://www.php.net/downloads.php#v5</link>
+  <description>大幅強化 OOP 功能的 PHP5 釋出候補第一版已公開</description>
+  <dc:date>2004-03-18</dc:date>
+ </item>
+ <item rdf:about="http://www.php.net/downloads.php">
+  <title>PHP 4.3.4 公開</title>
+  <link>http://www.php.net/downloads.php</link>
+  <description>錯誤修正版</description>
+  <dc:date>2003-09-30</dc:date>
+ </item>
+</rdf:RDF>

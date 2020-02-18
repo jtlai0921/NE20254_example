@@ -1,0 +1,9 @@
+#!/bin/sh
+kansokubase=`echo $1 | cut -c-8`
+tar xvfz $kansokubase.tgz
+cd kansoku/
+../../encode_kansoku_image.sh $kansokubase
+mv $kansokubase.mpg ..
+cd ..
+rm -rf kansoku/
+

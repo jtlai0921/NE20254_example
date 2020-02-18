@@ -1,0 +1,76 @@
+  <table cellpadding="0" cellspacing="0" border="0" width="100%" align="right">
+   <tbody>
+   <tr>
+    <td valign="top" width="50" nowrap="nowrap"> </td>
+    <td valign="top" align="left" nowrap="nowrap">Image Data</td>
+    <td valign="top" align="left" nowrap="nowrap"> Upload¡£¥¡</td>
+<!-- BEGIN upload_form -->
+ <form enctype="multipart/form-data" method="post" action="{ACTION}?folder={FOLDER}">
+  <input type="hidden" name="proc" value="upload">
+  <input type="hidden" name="cmd" value="upload">
+    <td valign="top" align="left" width="200" nowrap="nowrap">
+     <input type="file" name="sourcedata" size="40">
+    </td>
+    <td valign="top" align="left" width="40" nowrap="nowrap">
+     <input type="submit" value="Send">
+    </td>
+ </form>
+<!-- END upload_form -->
+   </tr>
+   </tbody>
+  </table>
+
+<!-- BEGIN delete_form -->
+ <form method="post" action="{ACTION}?folder={FOLDER}">
+  <input type="hidden" name="proc" value="upload">
+  <input type="hidden" name="cmd" value="delete">
+
+  <table cellpadding="2" cellspacing="2" border="0" width="100%">
+   <tbody>
+   <tr>
+    <td valign="bottom" width="180" nowrap="nowrap">Image Data List</td>
+    <td width="180"></td>
+    <td valign="bottom" width="160" align="right" nowrap="nowrap">
+     <font size="-1">DEL Marked<input type="submit" value="Delete"></font>
+    </td>
+   </tr>
+   </tbody>
+  </table>
+
+  <table cellpadding="2" cellspacing="2" border="1" width="100%">
+   <tbody>
+   <tr>
+    <th valign="top" width="240" nowrap="nowrap" bgcolor="#99ffbb">
+    <small>File Name</small></th>
+    <th valign="top" width="120" nowrap="nowrap" bgcolor="#99ffbb">
+     <small>Size</small></th>
+    <th valign="top" width="160" nowrap="nowrap" bgcolor="#99ffbb">
+     <small>Date</small></th>
+    <th valign="top" width="100" nowrap="nowrap" bgcolor="#99ffbb">
+     <small>Data Kind</small></th>
+    <th valign="top" height="20" width="20" nowrap="nowrap" bgcolor="#99ffbb">
+     <small>DEL</small></th>
+   </tr>
+<!-- BEGIN upload_files -->
+   <tr>
+    <td>
+     <table cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tr height="20">
+         <td align="left" width="26"><img src="imgpng.php?file={ICON_NAME}"></td>
+         <td align="left">{FILE_NAME}</td>
+        </tr>
+     </table>
+    </td>
+    <td align="right">{DATA_SIZE}</td>
+    <td align="center">{TIMESTAMP}</td>
+    <td align="center">{DATA_KIND}</td>
+    <td>
+     <input type="checkbox" name="list_id[{LIST_ID}]" value="{FILE_NAME}" {CHECKED}>
+    </td>
+   </tr>
+<!-- END upload_files -->
+   </tbody>
+  </table>
+
+ </form>
+<!-- END delete_form -->

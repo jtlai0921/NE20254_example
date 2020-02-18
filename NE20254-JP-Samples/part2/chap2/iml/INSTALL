@@ -1,0 +1,24 @@
+
+PEARの準備
+
+PHPのPEAR から、Conifg, XML_Parser, HTML_QuickFOrm, HTML_Template_IT を用意します。
+
+# pear install Config
+install ok: Config 1.10.4
+# pear install XML_Util
+install ok: XML_Util 1.1.1
+# pear upgrade XML_Parser
+upgrade ok: XML_Parser 1.2.4
+# pear upgrade HTML_QuickForm
+upgrade ok: HTML_QuickForm 3.2.4pl1
+# pear upgrade HTML_Template_IT
+Package 'HTML_Template_IT-1.1' already installed, skipping
+
+また、zziplib ライブラリをインストールして、PECLから zip.so をインストールします。 zziplib に関しては、http://zziplib.sourceforge.net/ に情報があり、そこからダウンロードすることができます。
+
+
+ディレクトリの用意
+
+パッケージを展開したら、構成フォルダとデータフォルダの用意をしてから、 install.php にアクセスし、サイトの設定を行ないます。この際、あらかじめ、config サブフォルダにはWebサーバからの書き込み許可を与えます。さらに、データフォルダ(デフォルトは ./data)を作成し、これにもWebサーバからの書き込み許可を与えます。
+
+

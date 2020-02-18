@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="ZIPCode"
+  targetNamespace="http://www.example.com/ZIPCode"
+  xmlns:tns="http://www.example.com/ZIPCode"
+  xmlns="http://schemas.xmlsoap.org/wsdl/"
+  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+  xmlns:xsd="http://www.w3.org/1999/XMLSchema">
+
+ <message name="getInfoByZIPRequest">
+  <part name="wsInType" type="xsd:int" />
+ </message>
+
+ <message name="getInfoByZIPResponse">
+  <part name="wsOutType" type="xsd:string" />
+ </message>
+
+ <portType name="ZIPCodeType">
+  <operation name="getInfoByZIP">
+   <input message="tns:getInfoByZIPRequest"/>
+   <output message="tns:getInfoByZIPResponse"/>
+  </operation>
+ </portType>
+
+ <binding name="ZIPCodeBinding" type="tns:ZIPCodeType">
+  <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+  <operation name="getInfoByZIP">
+   <soap:operation soapAction="urn:zipcode-service"/>
+   <input>
+    <soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+         namespace="urn:zipcode-service" use="encoded"/>
+   </input>
+   <output>
+    <soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+         namespace="urn:zipcode-service" use="encoded"/>
+   </output>
+  </operation>
+ </binding>
+
+ <service name="ZIPCodeService">
+  <port name="ZIPCodePort" binding="ZIPCodeBinding">
+  <soap:address location="http://php/part1/chap8/soap_server_wsdl.php"/>
+  </port>
+ </service>
+</definitions>

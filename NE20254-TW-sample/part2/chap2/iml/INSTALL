@@ -1,0 +1,67 @@
+＝＝
+安裝
+＝＝
+
+● PEAR 的準備
+
+從 PHP 的 PEAR 安裝 Conifg, XML_Common, XML_Parser, HTML_QuickForm,
+HTML_Template_IT 等套件。
+
+	--
+	# pear install Config
+	install ok: Config 1.10.4
+	# pear install XML_Util
+	install ok: XML_Util 1.1.1
+	# pear upgrade XML_Parser
+	upgrade ok: XML_Parser 1.2.4
+	# pear upgrade HTML_QuickForm
+	upgrade ok: HTML_QuickForm 3.2.4pl1
+	# pear upgrade HTML_Template_IT
+	Package 'HTML_Template_IT-1.1' already installed, skipping
+	--
+
+
+● 安裝 zziplib
+
+接著在安裝好 zziplib 函式庫之後，透過 PECL 安裝 zip.so。zziplib 的相關資料可在
+http://zziplib.sourceforge.net/ 找到，也可在此下載。
+
+PECL 的 zip 擴充模組可透過 pecl 指令進行安裝。
+
+	--
+	# pecl install zip
+	--
+
+
+● 安裝 NetPBM
+
+要處理 Windows 點陣圖檔 (BMP) 之前，必須先裝好 NetPBM 圖檔轉換程式群。
+(http://netpbm.sourceforge.net/,
+ http://gnuwin32.sourceforge.net/packages/netpbm.htm)
+
+● 準備目錄
+
+解開壓縮檔之後，必須準備設定目錄 (./config) 以及資料目錄。./config 子目錄必須
+讓 Web 伺服器擁有寫入權限。另外還必須建立資料目錄 (預設是 ./data)，這邊也必須
+賦予 Web 伺服器寫入權限。
+
+● 安裝
+
+安裝工作可用瀏覽器打開 http://伺服器位址/路徑~imagelist/install.php 設定各種
+相關選項之後進行傳送。安裝結束之後，請將 install.php 刪除。
+
+＝＝＝＝
+解除安裝
+＝＝＝＝
+
+想解除安裝、將程式本體壓縮起來的時候，可將資料目錄的內容 (預設是 ./data/*) 
+全數刪除，並刪除 ./config/param.xml 然後將 ./config.php/install.php 複製到
+主目錄下。
+
+	--
+	# rm -rf ./data*
+	# rm -f ./config/param.xml
+	# cp -p ./config/install.php .
+	--
+
+

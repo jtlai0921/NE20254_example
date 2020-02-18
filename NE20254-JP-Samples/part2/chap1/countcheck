@@ -1,0 +1,23 @@
+#!/usr/bin/perl
+use Fcntl;
+use GDBM_File;
+
+if ($#ARGV == -1) {
+	$dbmfn='counter';
+} else {
+	$dbmfn=$ARGV[0];
+}
+
+-e $dbmfn || die "file \"$dbmfn\" is not existed.\n";
+#-e $dbmfn . ".lck" || die "\"$dbmfn\" is not a BDB file.\n";
+
+tie %count,GDBM_File,$dbmfn,O_RDONLY,644;
+$i=0;
+$total=0;
+while(($key,$value) = each(%count)){
+	print " $key = $value\n";
+	$i++;
+	$total+=$value;
+}
+untie %count;
+print "Totaly ".$i." key(s) in the file and ".$total." accesses.\n";

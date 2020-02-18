@@ -1,0 +1,63 @@
+<table>
+ <tbody>
+  <tr><td colspan='2' bgcolor='#ccffff'>
+   <table cellpadding='2' cellspacing='0' border='0' width='100%'><tbody>
+   <tr><td valign='top' align='left' bgcolor='#ccffff'>
+   <a href='$listaction'>ImageList</a>
+    </td><td align='right' bgcolor='#ccffff'>
+    <a href='$uploadaction'>ImageUpload</a>
+    </td></tr>
+  </tbody></table>
+  </td></tr>
+  <form method=get action='$action'>
+   <input type='hidden' name='folder' value='$folder' />
+  <!--
+   <tr><td>
+     Test Mode(1:test)
+    </td><td>
+     <input type='text' name='TEST' value='$TEST' />
+    </td></tr>
+  -->
+   <tr><td>
+     original image file directory.
+    </td><td>
+     <input type='text' name='original_directory' value='$original_directory' />
+    </td></tr>
+    <tr><td>
+     thumbnailed image file directory.
+    </td><td>
+     <input type='text' name='thumbnail_directory' value='$thumbnail_directory' />
+   </td></tr>
+   <tr><td>
+     smoothing image when resize(sampling requires mutch CPU).
+    </td><td>
+     <input type='text' name='smooth_resize' value='$smooth_resize' />
+    </td></tr>
+   <tr><td>
+     how edit the remarks(a:append, o:overwrite, r:readonly, n:none)
+    </td><td>
+     <input type='text' name='edit_rmk_mode' value='$edit_rmk_mode' />
+    </td></tr>
+   <tr><td>
+     picture frame band pixcels(-1: no frame, 0: default).
+    </td><td>
+     <input type='text' name='pict_frame_band' value='$pict_frame_band' />
+    </td></tr>
+   <tr><td>
+     label size on picture frame(-1: no label, 0: auto).
+    </td><td>
+     <input type='text' name='pict_frame_label' value='$pict_frame_label' />
+    </td></tr>
+   <tr><td>
+     maximum number of files to be uploaded for image_upload.
+    </td><td>
+     <input type='text' name='max_uploads' value='$max_uploads' />
+    </td></tr>
+   <tr>
+    <td></td>
+    <td colspan='2'>
+     <input type='submit' value='Set'>
+    </td></tr>
+   </form>
+   </tbody>
+  </table>

@@ -1,0 +1,20 @@
+<hr size="1">
+</blockquote>
+<img src="/icons/back.gif"><a href="<?php echo $_SERVER['PHP_SELF'];?>">¥ª¥å¥³¥ï¡¢¥Ò¥Õâ¦ë</a><br>
+<img src="/icons/layout.gif"><a href="/">¡¦¥ª¡¦¡¢¡¦¥Í¡¢¥Û¥³¥Ì¥»êË€€¥ê</a>
+<center>
+<a href="gb.php"> [¡¦¥¤¡¦¥±¡¦¥Í¡¦ú§¡¼] </a>
+<a href="mf.php"> [¡¦â£¥·¡¦õ¾ </a>
+</center>
+<hr>
+<address>
+¥Þ¡Ö¥ØúÂð£¥¡<A HREF="mailto:root@localhost">root@localhost</A>
+</address>
+<center>
+<a href="http://www.apache.org/">
+<img src="apache_pb.gif" border="0" alt="Powered by Apache"></a>
+<a href="http://www.php.net/">
+<img src="php5.jpg" border="0" alt="Powered by PHP"></a>
+</center>
+<p align="right"><?php echo Date("Y-m-d(D)", Time());?></p>
+</body></html>

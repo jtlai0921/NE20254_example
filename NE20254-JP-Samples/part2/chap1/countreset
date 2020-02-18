@@ -1,0 +1,38 @@
+#!/usr/bin/perl
+use Fcntl;
+use GDBM_File;
+
+if ($#ARGV < 1) {
+	die "Usage: $ARGV[-1] <counter dbmname> <key name>\n";
+} else {
+	$dbmfn=$ARGV[0];
+	shift;
+	$key = $ARGV[0];
+	if ($#ARGV > 0) {
+		shift;
+		$value = $ARGV[0];
+	} else {
+		$value = 0;
+	}
+}
+
+print $dbmfn."{".$key."}\n";
+
+-e $dbmfn || die "file \"$dbmfn\" is not existed.\n";
+#-e $dbmfn . ".lck" || die "\"$dbmfn\" is not a BDB file.\n";
+
+tie %count,GDBM_File,$dbmfn,O_RDWR|O_CREAT,664;
+exists $count{$key} || die "\"$key\" is not in the GDBM file.\n";
+print "$count{$key} = $value \n";
+$count{$key} = $value;
+
+# check contained data.
+$i=0;
+$total=0;
+while(($key,$value) = each(%count)){
+	print " $key = $value\n";
+	$i++;
+	$total+=$value;
+}
+untie %count;
+print "Totaly ".$i." key(s) in the file and ".$total." accesses.\n";

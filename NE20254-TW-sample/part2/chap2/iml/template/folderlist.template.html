@@ -1,0 +1,43 @@
+<table>
+ <tbody>
+
+ <h3>Folder Creation</h3>
+
+ <form method=get action='$action'>
+ <input type='hidden' name='cmd' value='create' />
+ <tr>
+  <td>
+   Title(Blief Explanation)
+  </td>
+  <td>
+   <input type='text' name='label' value='$label' />
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Folder Name(ASCII string)
+  </td>
+  <td>
+   <input type='text' name='folder' value='$folder' />
+  </td>
+ </tr>
+ <tr>
+  <td>
+  </td>
+  <td colspan='2' align='right'>
+   <input type='submit' value='Create Folder'>
+  </td>
+ </tr>
+ </form>
+ <tr>
+  <td>
+  </td>
+  <td colspan='2' align='right'>
+   <form method=get action='$action'>
+    <input type='hidden' name='cmd' value='cancel' />
+    <input type='submit' value='Cancel'>
+   </form>
+  </td>
+ </tr>
+ </tbody>
+</table>

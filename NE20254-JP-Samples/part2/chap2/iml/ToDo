@@ -1,0 +1,35 @@
+Todo:
+
+* Keyword searching.
+* Using dbms to store comments.
+* File manupilation(copy, delete, export, backup and mail).
+* Selection for file manupilation.
+* Export for public(publish)
+* MPEG encoder invocation.
+* Backup images.
+* Superimposed by user input(string with specified font, other images).
+
+
+Done:
+2005-02-01(JuK)
+* installer.
+* seperate site configuration from image folders.
+
+2003-11-24(JuK)
+* Multi-folder index.
+* Whole working file removement.
+
+2003-08-10(JuK)
+* Picture rotation(by +-90 deg./angle).
+
+2003-07-21(JuK)
+* Image file upload(optionaly zipped multifile)
+* Delete images.
+* Parameter Setting
+* Multi-directories(capability with setparam)
+
+2002-09-16(JuK)
+* Sort for list display(order by Date/Name).
+
+
+

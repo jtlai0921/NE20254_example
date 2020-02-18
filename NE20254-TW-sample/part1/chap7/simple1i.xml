@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE members SYSTEM "simple1.dtd">
+<members>
+ <person id="a1">鈴木太郎</person>
+ <person id="a2">佐藤花子</person>
+ <person>Foo</person>
+</members>

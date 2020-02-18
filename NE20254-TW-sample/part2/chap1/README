@@ -1,0 +1,29 @@
+使用 DBA 的簡易存取計數器範例
+							    2005-02-09
+							くわむら じゅん
+						juk at yokohama email.ne.jp
+
+
+使用方式：
+<?
+	// 讀入計數器相關函式定義檔、
+	require "count.php";
+	// 將計數資料檔名當成引數，呼叫 countup 函式
+	countup("../tmp/counter");
+?>
+
+
+檔案說明
+
+  count.php		: 計數器相關函式定義檔
+  counttest.php		: 使用範例
+  strimg.php		: 計數器圖片產生程式
+  {counter,counter.lck}	: 計數器 DBM 檔與鎖定檔
+  {countcheck, countreset} : 計數器 DBM 檔案管理指令 (Perl/需要GDBM_File)
+  {countcheck.php, countreset.php} : 計數器 DBM 檔案管理指令 (PHP)
+
+  散佈條件遵照 GPL，是自由軟體，但如果在書籍、其他媒體轉載的話，能通知作者是
+最好的。
+
+  另外，本軟體不具任何保證。使用的時候如果本軟體發生問題，或是發生與本軟體
+相關的問題、損害，作者一律不負任何責任，敬請注意。

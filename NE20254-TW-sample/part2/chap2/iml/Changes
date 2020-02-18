@@ -1,0 +1,76 @@
+Change History for ImageList program.
+
+* 2005-10-12	Add print format.
+
+* 2005-10-06	Add more resize options to SaveImgRemarks
+
+* 2005-10-04	Mod max option for EditImgRemarks().
+
+* 2005-10-03	Add browse mode(imagelistbrowse.php).
+
+* 2005-03-28	Mod scroll for image creation output.
+
+* 2005-02-26	Add  authentication for upload
+
+* 2005-02-08	Mod thumbnail print from exif data.
+
+* 2005-02-07	Add BMP, TIFF and XPM operateions.
+
+* 2005-02-01	Mod create config.php and template folder.
+
+* 2005-01-05	Add install.php, config/param.xml and template folder.
+
+* 2004-11-28	Mod separate folderlist.php.
+
+* 2004-11-28	Add GIF mage creation.
+
+* 2003-12-08	Add frame label parameter.
+
+* 2003-12-07	Add imageresample option for smoothing resize.
+
+* 2003-11-24	Add frame size parameter. call RmWorkImg when recreate.
+
+* 2003-11-23	Add folder name specification.
+
+* 2003-08-28	Mod remove timestamp for edit when overwrite mode.
+
+* 2003-08-10	Add link to imageupload.php as labeled "File List"
+
+* 2003-07-27	Add filname on title.
+
+* 2003-07-20	imageupload.php,imageupload.template.html for upload and list
+
+* 2003-07-20	Add index.php,imageparam.php.template for parameter
+		specification.
+
+* 2003-07-20	Add web uri path.
+
+* 2002-10-29	Use internal encoding for remarks.
+
+* 2002-09-16	Use file list instead of directory info. in while loop
+		to sort in order to their name for historical observation.
+		Add simple header and footer.
+
+* 2002-08-28	Edit mode for remarks(readonly or none).
+		Create dummy image for zero sized file.
+
+* 2002-07-04	Edit mode for remarks(append or overwrite).
+		Another view image in original size.
+
+* 2002-03-15	Fixed size on zoom page.
+
+* 2002-02-14	Move original data into $original directory.
+
+* 2002-02-13	Modification for register_globals=Off, register_argc_argv=Off.
+
+* 2001-12-09	Add navigate(up/previous/next) on zoom page.
+
+* 2001-08-22	Add $PHPSELF before all '?' in URL.
+
+* 2001-06-03	Generate present(browse size) file for zoom page.
+
+* 2001-07-21	Thumbnail in the table layout.
+
+* 2000-08-08	Created thumbnail list to deliver photo-snaps on WWW
+		with writable remarks.
+			 by Jun Kuwamura <juk at yokohama.email.ne.jp>
